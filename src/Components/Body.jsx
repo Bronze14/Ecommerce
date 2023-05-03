@@ -86,10 +86,35 @@ function Body() {
         useStateValueMini(item=>item-1)
     }
   }
+  function increaseValueMobile(){
+    if(value>=3){
+      useStateValue(item=>item=0)
+    }
+    else{
+      useStateValue(item=>item+1)
+    }
+  }
+  function decreaseValueMobile(){
+    if(value==0){
+        useStateValue(item=>item=3)
+    }
+    else{
+        useStateValue(item=>item-1)
+    }
+  }
   return (
     <section className='body--Cart'>
-        <div>
-            
+        <div className='image--Mobile'>
+            <button onClick={decreaseValueMobile} className='left--Mobile' style={{display:'none'}}>
+                <svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                </svg>
+            </button>
+            <button onClick={increaseValueMobile} className='right--Mobile' style={{display:'none'}}>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg>
+            </button>
             <img src={photos[value]} onClick={handleChange}/>
             <div className='photo--Bar'>
                 <img src={Photomini1} onClick={firstPhoto}/>
@@ -98,7 +123,7 @@ function Body() {
                 <img src={Photomini4} onClick={fourthPhoto}/>
             </div>
 
-        </div>
+        </div>  
         {dark && (
         <div className='photo--absolute'>
             <section>

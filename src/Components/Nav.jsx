@@ -8,31 +8,63 @@ import Photomini1 from '../images/image-product-1-thumbnail.jpg'
 function Nav() {
   const dispatch = useDispatch()
   const  [avatar, useAvatar] = React.useState(false)
+  const [visible, useVisible] = React.useState(false)
   const {amount,id} = useSelector((state)=> state.cart)
   console.log(amount)
   function displayOptions(){
     useAvatar(item=>!item)
   }
+  function displayToolBar(){
+    useVisible(item=>!item)
+  }
   return (
     <div className='nav'>
         
-        <div className='nav--Bar'>
+        <div className='nav--Bar' >
+                <button onClick={displayToolBar} className='btn--Open' >
+                
+                    <svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zM3.75 12h.007v.008H3.75V12zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm-.375 5.25h.007v.008H3.75v-.008zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                    </svg>
+
+                
+                
+                </button>
                 <a > 
 
                     <h2>sneakers</h2>
                 </a>
-                <a > 
-                    <h4>Collections</h4>
-                </a>
-                <a > 
-                    <h4>Man</h4>
-                </a>
-                <a > 
-                    <h4>Women</h4>
-                </a>
-                <a > 
-                    <h4>About</h4>
-                </a>
+                
+
+                <div className='Toolbar' style={{ display: visible ? 'none' : 'block' }}>
+                    
+                    
+                        
+                        
+                        
+                    <svg onClick={displayToolBar} className='btn--Close--Mobile' style={{display:'none'}} width="14" height="15" xmlns="http://www.w3.org/2000/svg"><path d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z" fill="#69707D" fill-rule="evenodd"/></svg>
+                        
+                        
+                        
+                   
+                    <a > 
+                        <h4>Collections</h4>
+                    </a>
+                    <a > 
+                        <h4>Man</h4>
+                    </a>
+                    <a > 
+                        <h4>Women</h4>
+                    </a>
+                    <a > 
+                        <h4>About</h4>
+                    </a>
+                </div>
+                <div className='dark--Theme--Mobile'style={{ display: visible ? 'none' : 'block' }} onClick={displayToolBar}>
+                
+                
+
+                </div>
             <div>
                 <section className='numberOfProducts'>
                     <svg onClick={displayOptions} width="22" height="20" xmlns="http://www.w3.org/2000/svg">

@@ -1,7 +1,7 @@
 
 @import 'Variables';
 
-
+@media screen and (min-width: 801px) {
 .nav{
     width: 100%;
     height: 112px;
@@ -17,6 +17,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        .btn--Open{
+            display: none;
+        }
+        .Toolbar{
+            display: flex !important;
+        }
         a{
         
             h2{
@@ -212,4 +218,287 @@
 
     }
 }
+}
+@media screen and (max-width: 800px) {
+    .nav{
+        width: 100%;
+        height: 70px;
+        background-color: white;
+        display:flex;
+        
+        .nav--Bar{
+            border-bottom: none;
+            display:flex;
+            width: 327px !important;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .btn--Open{
+                
+                width: 50px;
+                height: 50px;
+                margin-right: 10px;
+                margin-top: 11px;
+                object-fit: cover;
+                border: none;
+                background-color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
 
+            }
+            .dark--Theme--Mobile{
+                position: absolute;
+                background-color: black;
+                width: 70%;
+                height: 100%;
+                z-index: 2;
+                left: 30%;
+                top: 0%;
+                opacity: 0.8;
+            }
+            .Toolbar{
+                z-index: 3 !important;
+                position: absolute;
+                left: 0%;
+                top: 0%;
+                display:block;
+                height: 100%;
+                padding-left: 25px;
+                padding-top: 92px;
+                width: 290px;
+                background-color: white;
+                    .btn--Close--Mobile{
+                    display: flex !important;
+                    
+                    align-items: center;
+                    justify-content: center;
+                    width: 50px;
+                    border: none !important;
+                    
+                    svg{
+                        
+                        width: 100% !important;;
+                        height: 100% !important;;
+                        
+                    }
+                }
+
+                a{
+                    h4{
+                        @include h4style;
+                        font-size: 18px !important;
+                        font-weight: 700 !important;
+                        line-height: 26px !important;
+                        letter-spacing: 0px;
+                        text-align: left;
+                        color: black !important;
+                    }
+                }
+            }
+            a{
+            
+                h2{
+                    @include h2style;
+                    margin-right: 0px;
+                    cursor: pointer;
+                }
+                h4{
+                    margin-left: 0px;
+                    @include h4style;
+                    cursor: pointer;
+                    
+                }
+            }
+            .numberOfProducts{
+                display: flex;
+                
+                svg{
+                    margin-right: 20px;
+                    cursor: pointer;
+                    margin-top: 10px;
+                }
+                span{
+                    
+                    position: absolute;
+                    margin-left: 9px;
+                    margin-top: 5px;
+                    background-color: orange;
+                    color: white;
+                    width: 19px;
+                    height: 13px;
+                    border-radius: 6.5px;
+                    display: flex;
+                    text-align: center;
+                    justify-content: center;
+                    align-items: center;
+                    h4{
+                        @include h4style;
+                        color: white;
+                        font-size: 10px;
+                        font-weight: 700;
+                    }
+                    
+                    
+                }
+            }
+    
+            div{
+                margin-left: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    cursor: pointer;
+                    height: 50px;
+                    width: 50px;
+                    border: 3px solid white;
+                    border-radius: 50%;
+                    transition: border 0.3s ease;
+                }
+                img:active{
+                    border: 3px solid orange;
+    
+                }
+                img:hover{
+                    border: 3px solid orange;
+                }
+    
+                .shopping--Cart{
+                    z-index:1!important;
+                    position: absolute;
+                    width: 360px;
+                    height: 256px;
+                    margin-top: 350px;
+                    margin-right: 230px;
+                    display:block;
+                    background-color: #FFFFFF;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+                    
+                    section{
+                        width: 100%;
+                        border-bottom: 2px solid #E4E9F2;
+                        h1{
+                            margin-left: 20px;
+                            @include h4style;
+                            color: black !important;
+                        }
+                    }
+                    div{
+                        height: 100%;
+    
+                        
+                        
+                        h3{
+                            
+                            @include h4style;
+                            color: #69707D !important;
+                        }
+                    }
+                    .nav--Cart{
+                        height: 180px;
+                        margin: 0;
+                        
+                        img{
+                            border-radius: 0;
+                        }
+                        div{
+                            height: 52px;
+                            
+                            margin-bottom: 30px;
+                            margin-top: 40px;
+                            display: flex !important;
+                            @include h4style;
+                            width: 312px;
+                            img{
+                                border: none !important;
+                                margin-top: 13px;
+                            }
+                            img:hover{
+                                border: none !important;
+                                cursor:auto;
+                            }
+                            svg{
+                                width: 50px;
+                                height: 40px !important;
+                                cursor: pointer;
+                                margin: 0 !important;
+                                margin-top: 10px !important;
+                            }
+                            section{
+                                height: 52px;
+                                margin-left: 16px;
+                                border: none;
+                                
+    
+                                p{
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content:flex-start;
+                                    height: 52px;
+                                    margin: 0 !important;
+                                    padding: 0 !important;
+                                    
+                                    h4{
+                                        
+                                        margin-left: 10px !important;
+    
+                                    } 
+                                }
+                                h5{
+                                    @include h4style;
+                                    
+                                    
+                                    margin: 0 !important;   
+                                    
+                                    padding: 0 !important;
+                                    
+                                }
+                                h3{
+                                    margin: 0 !important;
+                                    padding: 0 !important;
+                                    @include h4style;
+                                }
+                                h4{
+                                    margin: 0 !important;
+                                    padding: 0 !important;
+                                    @include h4style;
+                                    font-size: 16px;
+                                    font-weight: 700;
+                                    color: black !important;
+                                }
+                            }
+                            
+    
+                        }
+                        button{
+                            width: 312px;
+                            height: 56px;
+                            background-color: #FF7E1B;
+                            @include h4style;
+                            color: white;
+                            border-radius: 10px;
+                            border: none;
+                            cursor: pointer;
+                            text-align: center;
+                            
+                        }
+                        button:hover{
+                            opacity: 0.7;
+                        }
+    
+                    }
+                }
+    
+            }
+    
+        }
+    }
+  
+
+
+
+
+}

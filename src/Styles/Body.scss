@@ -261,3 +261,152 @@ body{
 
 
 }
+@media screen and (max-width: 800px) {
+    .body--Cart{
+        
+        width: 100%;
+        margin: auto;
+        margin-top: 40px;
+        display: block;
+        .image--Mobile{
+            margin: auto !important;
+            width: 275px;
+        }
+        img{
+            width: 275px;
+            height: 300px;
+            border-radius: 0px;
+            
+        }
+        .left--Mobile{
+            display: block !important;
+            position: absolute;
+            top: 30%;
+            border-radius: 100%;
+            border: none;
+            margin-left: 5px;
+            svg{
+                width: 20px;
+            }
+        }
+        .right--Mobile{
+            display: block !important;
+            position: absolute;
+            
+            top: 30%;
+            margin-left: 240px;
+            border-radius: 100%;
+            border: none;
+            svg{
+                width: 20px;
+            }
+        }
+        
+        .photo--Bar{
+            display: none;
+        }
+        .photo--absolute{
+            display: none;
+        }
+        .body--Description{
+
+            margin: auto;
+            width: 327px;
+            h5{
+                font-size: 12px;
+                line-height: 14px;
+                letter-spacing: 1.8px;
+            }
+            h1{
+                font-size: 28px;
+                line-height: 32px;
+            }
+            h4{
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 25px;
+            }
+            span{
+                h3{
+                    line-height: 34px;
+                    letter-spacing: 0px;
+                }
+                h4{
+                    font-size: 16px;
+                }
+                h5{
+                    display: inline-block !important;
+                    margin-left: 100px;
+                }
+    
+            }
+            .body--Btn{
+                display: flex;
+                .minus--Btn{
+                    color:#FF7E1B;
+                    font-size: 30px;
+                    border: none;
+                    cursor: pointer;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #FFFFFF;
+                    
+                }
+                .minus--Btn:hover{
+                    opacity: 70%;
+                }
+                .plus--Btn{
+                    color:#FF7E1B;
+                    font-size: 20px;
+                    font-weight: 700;
+                    border: none;
+                    cursor: pointer;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #FFFFFF;
+                }
+                .plus--Btn:hover{
+                    opacity: 70%;
+                }
+                h4{
+                    @include h4style;
+                    color: black !important;
+                    font-size: 16px !important;
+                    font-weight: 700 !important;
+                    padding-left: 25px;
+                    padding-right: 25px;
+                    width: 10px;
+                }
+                .add--Btn{
+                    width: 272px;
+                    height: 56px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-left: 30px;
+                    background-color: #FF7E1B;
+                    border: none;
+                    border-radius: 10px;
+                    color:#FFFFFF;
+                    cursor: pointer;;
+    
+                    h4{
+                        @include h4style;
+                        margin-left: 10px;
+                        color: white !important;
+                        font-weight: 700 !important;
+                        width: 89px;
+                    }
+                }
+                .add--Btn:hover{
+                    opacity: 70%;
+                }
+            }
+    
+        }
+    
+    
+    }
+}
