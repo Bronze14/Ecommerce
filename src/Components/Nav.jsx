@@ -10,7 +10,7 @@ function Nav() {
   const  [avatar, useAvatar] = React.useState(false)
   const [visible, useVisible] = React.useState(false)
   const {amount,id} = useSelector((state)=> state.cart)
-  console.log(amount)
+  
   function displayOptions(){
     useAvatar(item=>!item)
   }
