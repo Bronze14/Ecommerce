@@ -3,11 +3,6 @@ import Photo1 from '../images/image-product-1.jpg'
 import Photo2 from '../images/image-product-2.jpg'
 import Photo3 from '../images/image-product-3.jpg'
 import Photo4 from '../images/image-product-4.jpg'
-
-
-
-
-
 import Photomini1 from '../images/image-product-1-thumbnail.jpg'
 import Photomini2 from '../images/image-product-2-thumbnail.jpg'
 import Photomini3 from '../images/image-product-3-thumbnail.jpg'
