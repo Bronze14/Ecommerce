@@ -16,7 +16,8 @@ To get started with the project, follow the steps below:
 1. Clone the repository:
 
 ```
-git clone [https://github.com/Bronze14/Ecommerce.git]
+git clone https://github.com/Bronze14/Ecommerce.git
+
 ```
 
 2. Navigate to the project directory:
