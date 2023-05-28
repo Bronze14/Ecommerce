@@ -86,5 +86,5 @@ This project is licensed under the [MIT License](LICENSE).
 ## Acknowledgments
 
 - This project was built using Vite (https://vitejs.dev/) and React (https://reactjs.org/).
-- The design and layout of the e-commerce product page were inspired by various online stores.
+- The design and layout of the e-commerce product page were inspired by frontendmentor's challenge.
 
