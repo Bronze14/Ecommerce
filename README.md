@@ -16,13 +16,13 @@ To get started with the project, follow the steps below:
 1. Clone the repository:
 
 ```
-git clone [git clone [repository-url]]
+git clone [https://github.com/Bronze14/Ecommerce.git]
 ```
 
 2. Navigate to the project directory:
 
 ```
-cd e-commerce-product-page
+cd Ecommerce
 ```
 
 3. Install the dependencies:
