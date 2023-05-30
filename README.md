@@ -8,8 +8,7 @@ This is a responsive e-commerce product page built using React.js, HTML, and SCS
 
 ![image](https://github.com/Bronze14/Ecommerce/assets/76828789/87f3d9e7-d4a0-4423-86a9-ad658e3a2f40)
 
-![image](https://github.com/Bronze14/Ecommerce/assets/76828789/776fa596-1c34-450c-955a-9579b053021a)
-
+![image](https://github.com/Bronze14/Ecommerce/assets/76828789/776fa596-1c34-450c-955a-9579b053021a) ![image](https://github.com/Bronze14/Ecommerce/assets/76828789/cb55f995-e8cf-47a0-8c69-79b91f825b96)
 
 
 ## Prerequisites
