@@ -2,6 +2,16 @@
 
 This is a responsive e-commerce product page built using React.js, HTML, and SCSS. The project is set up with Vite and React, allowing for efficient development and hot module replacement. You can view the live preview of the project [here](https://poetic-belekoy-8ab2fe.netlify.app/).
 
+## Screenshots
+
+![image](https://github.com/Bronze14/Ecommerce/assets/76828789/e088a1a9-2a69-47ee-90bb-852b02dd0130)
+
+![image](https://github.com/Bronze14/Ecommerce/assets/76828789/87f3d9e7-d4a0-4423-86a9-ad658e3a2f40)
+
+![image](https://github.com/Bronze14/Ecommerce/assets/76828789/776fa596-1c34-450c-955a-9579b053021a)
+
+
+
 ## Prerequisites
 
 Before running the project, make sure you have the following dependencies installed:
